@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.3"
+  },
+  "dependencies": {
+    "@auth/core": "^0.10.4",
+    "h3": "1.8.0-rc.3",
+    "nitropack": "npm:nitropack-edge@latest",
+    "nuxt": "^3.6.5",
+    "@hebilicious/authjs-nuxt": "^0.3.0-beta.2"
+  },
+  "overrides": {
+    "h3": "1.8.0-rc.3",
+    "nitropack": "npm:nitropack-edge@latest"
+  }
+}
