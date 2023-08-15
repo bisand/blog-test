@@ -2,8 +2,18 @@ name = "bisand-blog-test"
 main = "./.output/server/index.mjs"
 workers_dev = true
 compatibility_date = "2022-09-10"
-account_id = "<account ID>"
-route = ""
+account_id = "<AccountID>"
+# route = ""
+compatibility_flags = [ "nodejs_compat" ]
+
+kv_namespaces = [
+    { binding = "images_test", preview_id = "aaf56cc016f042ab91636d59b4875776", id = "aaf56cc016f042ab91636d59b4875776" },
+    { binding = "bisand_blog_test", preview_id = "3e094d827b1f436d9cd16cdd3f860f24", id = "3e094d827b1f436d9cd16cdd3f860f24" }
+]
 
 [site]
 bucket = ".output/public"
+
+[dev]
+port = 3000
+local_protocol = "http"

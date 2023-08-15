@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   //    authenticatedRedirectTo: "/", // where to redirect if the user is not authenticated
   //    baseUrl: ""
   //  },
+  nitro: {
+    preset: "cloudflare"
+  },
   runtimeConfig: {
     authJs: {
       secret: process.env.NUXT_NEXTAUTH_SECRET // You can generate one with `openssl rand -base64 32`

@@ -14,10 +14,10 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
-    "@auth/core": "^0.10.4",
+    "@auth/core": "^0.10.0",
     "h3": "1.8.0-rc.3",
-    "nitropack": "npm:nitropack-edge@latest",
-    "@hebilicious/authjs-nuxt": "^0.3.0-beta.2"
+    "@hebilicious/authjs-nuxt": "^0.3.0-beta.2",
+    "nitropack": "npm:nitropack-edge@latest"
   },
   "overrides": {
     "h3": "1.8.0-rc.3",
