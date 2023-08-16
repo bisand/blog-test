@@ -11,8 +11,8 @@ const authOptions: AuthConfig = {
   secret: 'runtimeConfig.authJs.secret',
   providers: [
     GithubProvider({
-      clientId: runtimeConfig.github.clientId,
-      clientSecret: runtimeConfig.github.clientSecret
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET
     })
   ]
 }

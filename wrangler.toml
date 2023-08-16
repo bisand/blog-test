@@ -4,12 +4,14 @@ node_compat = true
 compatibility_date = "2022-09-10"
 workers_dev = true
 
-[site]
-bucket = "./dist"
-
-vars = { ORIGIN = "https://bisand-blog-test.pages.dev", NODE_VERSION = 18 }
+[vars]
+ORIGIN = "https://bisand-blog-test.pages.dev"
+NODE_VERSION = 18
 
 kv_namespaces = [
     { binding = "images", preview_id = "aaf56cc016f042ab91636d59b4875776", id = "34c5d7c3bbab404bb9777a058ef0a2cf" },
-    { binding = "bisand-blog", preview_id = "3e094d827b1f436d9cd16cdd3f860f24", id = "be707cd3dec2440085d7cc08a06e90b5" },
+    { binding = "bisand-blog", preview_id = "3e094d827b1f436d9cd16cdd3f860f24", id = "be707cd3dec2440085d7cc08a06e90b5" }
 ]
+
+[site]
+bucket = "./dist"

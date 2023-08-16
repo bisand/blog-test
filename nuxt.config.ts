@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
     public: {
       authJs: {
-        baseUrl: process.env.ORIGIN, // The base URL is used for the Origin Check in prod only
+        baseUrl: "https://bisand-blog-test.pages.dev", // The base URL is used for the Origin Check in prod only
         verifyClientOnEveryRequest: true // whether to hit the /auth/session endpoint on every client request
       }
     }
