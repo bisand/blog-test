@@ -19,7 +19,8 @@
 				"GitHub.copilot-labs",
 				"GitHub.copilot",
 				"qwtel.sqlite-viewer",
-				"donjayamanne.githistory"
+				"donjayamanne.githistory",
+				"github.vscode-github-actions"
 			]
 		}
 	},
