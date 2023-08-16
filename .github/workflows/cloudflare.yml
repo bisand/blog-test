@@ -38,7 +38,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          NITRO_PRESET: cloudflare-pages
+          NITRO_PRESET: cloudflare_pages
 
       - name: Publish to Cloudflare
         uses: cloudflare/wrangler-action@v3
