@@ -20,7 +20,7 @@ dependencies:
     version: 1.8.0-rc.3
   nitropack:
     specifier: npm:nitropack-edge@latest
-    version: /nitropack-edge@2.6.0-28202337.b6d679d
+    version: /nitropack-edge@2.6.0-28203048.00361fb
 
 devDependencies:
   '@nuxt/devtools':
@@ -4113,9 +4113,9 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /nitropack-edge@2.6.0-28202337.b6d679d:
-    resolution: {integrity: sha512-7SD2gCJavMMHsxhNzrJle4j1rOv1aBEwYdbIMSFIigllcyO85gnv1Xl3+OUYk86AkVIK+y4T3hi9szK+kdD/mA==}
-    engines: {node: ^14.16.0 || ^16.11.0 || >=17.0.0}
+  /nitropack-edge@2.6.0-28203048.00361fb:
+    resolution: {integrity: sha512-MUIyxqRHxakliSi4QXyiwFJJr+dxsjK2hAWI2dzfpkVZtnZYoxd3iIRJJrLfytuWgYMVPjExzYfM+OGUj1TvvQ==}
+    engines: {node: ^16.11.0 || >=17.0.0}
     hasBin: true
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.0
@@ -4434,7 +4434,7 @@ packages:
       local-pkg: 0.4.3
       magic-string: 0.30.2
       mlly: 1.4.0
-      nitropack: /nitropack-edge@2.6.0-28202337.b6d679d
+      nitropack: /nitropack-edge@2.6.0-28203048.00361fb
       nuxi: 3.6.5
       nypm: 0.2.2
       ofetch: 1.1.1

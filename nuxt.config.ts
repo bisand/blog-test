@@ -12,13 +12,14 @@ export default defineNuxtConfig({
   nitro: {
     preset: "cloudflare-pages"
   },
+  // Set environment variables via .dev.vars file for local development
   runtimeConfig: {
     authJs: {
       secret: process.env.NUXT_SECRET // You can generate one with `openssl rand -base64 32`
     },
     github: {
-      clientId: process.env.NUXT_GITHUB_CLIENT_ID,
-      clientSecret: process.env.NUXT_GITHUB_CLIENT_SECRET
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET
     },
     public: {
       authJs: {

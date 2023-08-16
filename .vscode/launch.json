@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "client: chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            // "preLaunchTask": "npm: build",
+            "request": "launch",
+            "name": "server: nuxt",
+            "program": "/usr/local/share/npm-global/bin/pnpm",
+            "args": [
+                "run",
+                "dev"
+            ]
+        }
+    ],
+    "compounds": [
+        {
+            "name": "fullstack: nuxt",
+            "configurations": [
+                "server: nuxt",
+                "client: chrome"
+            ]
+        }
+    ]
+}
