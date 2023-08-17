@@ -23,8 +23,8 @@ export default defineNuxtConfig({
     },
     public: {
       authJs: {
-        get baseUrl() { return "https://bisand-blog-test.pages.dev" },  // Due to Cloudflare's env var handleing, we have to use static values here
-        verifyClientOnEveryRequest: true              // whether to hit the /auth/session endpoint on every client request
+        baseUrl: process.env.CF_PAGES_URL,  // Due to Cloudflare's env var handleing, we have to use static values here
+        verifyClientOnEveryRequest: true    // whether to hit the /auth/session endpoint on every client request
       }
     }
   }
