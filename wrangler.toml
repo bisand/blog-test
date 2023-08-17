@@ -5,7 +5,7 @@ compatibility_date = "2022-09-10"
 workers_dev = true
 
 [vars]
-ORIGIN = "http://localhost:8788"
+NUXT_ORIGIN = "http://localhost:8788"
 NODE_VERSION = 18
 
 kv_namespaces = [

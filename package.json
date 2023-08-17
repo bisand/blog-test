@@ -2,7 +2,9 @@
   "name": "bisand-blog-test",
   "private": true,
   "scripts": {
+    "prebuild": "./pre-build.sh",
     "build": "nuxt build",
+    "postbuild": "./post-build.sh",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

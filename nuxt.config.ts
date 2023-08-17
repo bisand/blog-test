@@ -15,16 +15,16 @@ export default defineNuxtConfig({
   // Set environment variables via .dev.vars file for local development
   runtimeConfig: {
     authJs: {
-      get secret() { return process.env.NUXT_SECRET } // You can generate one with `openssl rand -base64 32`
+      secret: process.env.NUXT_SECRET // You can generate one with `openssl rand -base64 32`
     },
     github: {
-      get clientId() { return process.env.GITHUB_CLIENT_ID },
-      get clientSecret() { return process.env.GITHUB_CLIENT_SECRET }
+      clientId: process.env.NUXT_GITHUB_CLIENT_ID,
+      clientSecret: process.env.NUXT_GITHUB_CLIENT_SECRET
     },
     public: {
       authJs: {
-        baseUrl: process.env.CF_PAGES_URL,  // Due to Cloudflare's env var handleing, we have to use static values here
-        verifyClientOnEveryRequest: true    // whether to hit the /auth/session endpoint on every client request
+        baseUrl: process.env.NUXT_ORIGIN,
+        verifyClientOnEveryRequest: true
       }
     }
   }

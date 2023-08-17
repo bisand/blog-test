@@ -11,11 +11,13 @@ const authOptions: AuthConfig = {
   get secret() { return process.env.NUXT_SECRET },
   providers: [
     GithubProvider({
-      get clientId() { return process.env.GITHUB_CLIENT_ID },
-      get clientSecret() { return process.env.GITHUB_CLIENT_SECRET }
+      get clientId() { return process.env.NUXT_GITHUB_CLIENT_ID },
+      get clientSecret() { return process.env.NUXT_GITHUB_CLIENT_SECRET }
     })
   ],
 }
 
 const runtimeConfig = useRuntimeConfig()
+console.log("runtimeConfig", JSON.stringify(runtimeConfig))
+
 export default NuxtAuthHandler(authOptions, runtimeConfig)
