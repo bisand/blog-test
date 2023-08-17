@@ -47,4 +47,4 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           wranglerVersion: "3.5.1"
-          command: pages deploy --project-name=bisand-blog-test
+          command: pages deploy dist --project-name=bisand-blog-test
