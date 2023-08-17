@@ -15,6 +15,10 @@ cp nuxt.config.ts nuxt.config.ts.bak
 
 # Replace environment variables in nuxt.config.ts
 echo "Replacing environment variables in nuxt.config.ts"
+echo ${NUXT_SECRET}
+echo ${NUXT_GITHUB_CLIENT_ID}
+echo ${NUXT_GITHUB_CLIENT_SECRET}
+echo ${NUXT_ORIGIN}
 
 sed -i "s|process.env.NUXT_SECRET|\"${NUXT_SECRET}\"|g" nuxt.config.ts
 sed -i "s|process.env.NUXT_GITHUB_CLIENT_ID|\"${NUXT_GITHUB_CLIENT_ID}\"|g" nuxt.config.ts
