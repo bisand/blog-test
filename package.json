@@ -27,5 +27,6 @@
   "resolutions": {
     "h3": "1.8.0-rc.3",
     "nitropack": "npm:nitropack-edge@latest"
-  }
+  },
+  "version": "1.0.0"
 }
